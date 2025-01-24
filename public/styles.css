@@ -1,0 +1,226 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #bcf2f6;
+  background-image: url("https://images.pexels.com/photos/281260/pexels-photo-281260.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  font-size: 5rem;
+  color: #006bff;
+  margin: 0;
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: "Modak";
+  -webkit-text-stroke: 1px yellow;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.past-complaints {
+  position: sticky;
+  margin-top: 0px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.left-side-inner {
+  display: flex;
+  background-color: #08c2ff;
+  border: 3px solid #08c2ff;
+  border-radius: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 10px;
+  padding-left: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.right-side-inner {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-color: #08c2ff;
+  border: 3px solid #08c2ff;
+  border-radius: 20px;
+  margin-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  padding-right: 40px;
+  padding-left: 25px;
+  height: 60vh;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.left-side {
+  height: 100%;
+  width: 100%;
+  justify-items: center;
+  align-content: center;
+}
+
+.right-side {
+  height: 100%;
+  width: 100%;
+  align-content: center;
+  justify-items: top;
+}
+
+.nav-link {
+  font-size: 20px;
+  padding: 10px;
+  text-decoration: none;
+  color: #bcf2f6;
+}
+
+.blog-container {
+  display: block;
+  margin-left: 31%;
+  width: 100%;
+  align-self: center;
+  border: 3px solid #08c2ff;
+  border-radius: 10px;
+  padding: 5px;
+  width: 33%;
+  margin-bottom: 10px;
+}
+
+.right {
+  margin-right: 30px;
+}
+
+.blog-text-area {
+  width: 100%;
+  align-self: center;
+  background-color: #bcf2f6;
+  border: 4px solid #fff100;
+  border-radius: 20px;
+  padding: 5px;
+  min-width: 400px;
+}
+
+.textarea-grid {
+  display: flex;
+}
+
+#main-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  grid-template-rows: 1fr;
+  height: 100vh;
+  width: 100%;
+}
+
+#header-flexbox {
+  display: flex;
+  position: absolute;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #006bff;
+  height: 50px;
+  width: 100%;
+  top: 0px;
+  gap: 20px;
+  justify-content: right;
+  align-items: center;
+}
+
+.timestamp {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.blog-item {
+  color: #08c2ff;
+  text-align: left;
+  width: 100%;
+  height: auto;
+  border: 3px solid #006bff;
+  background: #006bff;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 10px;
+}
+
+#complain-btn {
+  background: #006bff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 40px;
+  border-radius: 20px;
+  border: 4px solid #006bff;
+  font-size: 3rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#footer {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #006bff;
+  height: 50px;
+  justify-content: left;
+  align-items: center;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post {
+  grid-column-start: 3;
+  grid-column: span 2;
+  align-self: center;
+  text-align: left;
+  font-family: "Barrio";
+  color: #006bff;
+  list-style-type: none;
+  overflow-wrap: anywhere;
+}
+
+form {
+  display: flex;
+}
+
+#copyright {
+  color: #bcf2f6;
+  margin: 0px 30px;
+}
+
+.cheese {
+  outline: 3px solid #fff100;
+  background-color: #fff100;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 100px;
+  background-color: #08c2ff;
+  color: #bcf2f6;
+  border-radius: 5px;
+}
+
+#main-flexbox {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
