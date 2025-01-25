@@ -1,9 +1,16 @@
 .App {
   font-family: sans-serif;
   text-align: center;
-  background-color: #bcf2f6;
-  background-image: url("https://images.pexels.com/photos/281260/pexels-photo-281260.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
-  background-size: cover;
+}
+
+.logo {
+  text-align: center;
+  font-size: 2rem;
+  color: #006bff;
+  margin: 0;
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: "Modak";
+  -webkit-text-stroke: 1px yellow;
 }
 
 h1 {
@@ -19,6 +26,7 @@ h1 {
 h2 {
   text-align: center;
   font-size: 2rem;
+  line-height: 1.6;
 }
 
 .past-complaints {
@@ -30,8 +38,13 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
+  width: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
+  background: linear-gradient(135deg, #1e3a8a, #2563eb, #60a5fa, #93c5fd);
+  background-attachment: fixed; /* Ensures the background stays fixed while scrolling */
+  background-size: cover; /* Ensures the gradient covers the entire area */
+  background-repeat: no-repeat;
 }
 
 .left-side-inner {
@@ -60,7 +73,7 @@ body {
   padding-left: 25px;
   height: 60vh;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-y: auto; /* Enable vertical scrolling*/
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
@@ -75,7 +88,7 @@ body {
   height: 100%;
   width: 100%;
   align-content: center;
-  justify-items: top;
+  justify-items: center;
 }
 
 .nav-link {
@@ -108,7 +121,6 @@ body {
   border: 4px solid #fff100;
   border-radius: 20px;
   padding: 5px;
-  min-width: 400px;
 }
 
 .textarea-grid {
@@ -145,6 +157,7 @@ body {
 }
 
 .blog-item {
+  align-self: center;
   color: #08c2ff;
   text-align: left;
   width: 100%;
@@ -155,7 +168,6 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin-top: 5px;
   margin-bottom: 5px;
-  padding-left: 10px;
 }
 
 #complain-btn {
@@ -172,7 +184,7 @@ body {
 #footer {
   display: flex;
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   width: 100%;
   background-color: #006bff;
   height: 50px;
@@ -222,5 +234,121 @@ form {
 #main-flexbox {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+}
+
+@media (max-width: 480px) {
+  #main-grid {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .left-side {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+  }
+
+  .right-side {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .left-side-inner {
+    padding: 10px;
+    width: 80%;
+  }
+
+  .right-side-inner {
+    padding: 10px;
+    width: 80%;
+    margin-right: 0px;
+    border-radius: 20px;
+  }
+
+  body {
+    overflow-y: auto;
+  }
+
+  #header-flexbox {
+    position: sticky;
+    gap: 5px;
+    justify-content: space-evenly;
+  }
+
+  #footer {
+    position: fixed;
+    bottom: 0px;
+  }
+}
+
+@media (min-width: 481) and (max-width: 767px) {
+  #main-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .left-side {
+    margin-top: 70px;
+  }
+
+  .right-side {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 30px;
+  }
+
+  body {
+    overflow-y: auto;
+  }
+
+  #header-flexbox {
+    position: sticky;
+  }
+
+  #footer {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+@media (min-width: 615px) and (max-width: 1147px) {
+  #main-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .left-side {
+    margin-top: 70px;
+  }
+
+  .right-side {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 30px;
+  }
+
+  body {
+    overflow-y: auto;
+  }
+
+  #footer {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+@media (min-width: 1148px) {
+  #main-grid {
+    grid-template-columns: repeat(2, 1f);
+  }
 }
