@@ -345,7 +345,62 @@ form {
   }
 }
 
-@media (min-width: 615px) and (max-width: 1147px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+  #main-grid {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .left-side {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+  }
+
+  .right-side {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .left-side-inner {
+    padding: 10px;
+    width: 80%;
+  }
+
+  .right-side-inner {
+    padding: 10px;
+    width: 80%;
+    margin-right: 0px;
+    border-radius: 20px;
+  }
+
+  body {
+    overflow-y: auto;
+  }
+
+  #header-flexbox {
+    position: sticky;
+    gap: 5px;
+    justify-content: space-evenly;
+  }
+
+  #footer {
+    position: fixed;
+    bottom: 0px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1147px) {
   #main-grid {
     grid-template-columns: 1fr;
   }
