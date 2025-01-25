@@ -296,15 +296,38 @@ form {
     grid-template-columns: 1fr;
   }
 
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
   .left-side {
-    margin-top: 70px;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .nav-link {
+    font-size: 1rem;
   }
 
   .right-side {
     width: 100%;
-    padding: 0px;
-    margin: 0px;
     margin-top: 30px;
+  }
+
+  .left-side-inner {
+    padding: 10px;
+    width: 80%;
+  }
+
+  .right-side-inner {
+    padding: 10px;
+    width: 80%;
+    margin-right: 0px;
+    border-radius: 20px;
   }
 
   body {
@@ -313,11 +336,13 @@ form {
 
   #header-flexbox {
     position: sticky;
+    gap: 5px;
+    justify-content: space-evenly;
   }
 
   #footer {
-    position: absolute;
-    bottom: 0;
+    position: fixed;
+    bottom: 0px;
   }
 }
 
