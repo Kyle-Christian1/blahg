@@ -2,11 +2,27 @@
   text-align: center;
 }
 
+.logo-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: red solid 2px;
+}
+
+.header-btn-box {
+  width: 100%;
+  border: white solid 2px;
+  display: flex;
+  justify-content: right;
+  gap: 1rem;
+}
+
 .logo {
   text-align: center;
   font-size: 2rem;
   color: #006bff;
   margin: 0;
+  margin-left: 1rem;
   text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   font-family: "Modak";
   -webkit-text-stroke: 1px yellow;
@@ -80,18 +96,20 @@ body {
   height: 100%;
   width: 100%;
   justify-items: center;
-  align-content: center;
+  align-content: center !important;
 }
 
 .right-side {
   height: 100%;
   width: 100%;
   align-content: center;
-  justify-items: center;
+  justify-items: center !important;
 }
 
 .nav-link {
-  font-size: 20px;
+  display: flex;
+  border: black solid 2px;
+  font-size: 1.3rem;
   padding: 10px;
   text-decoration: none;
   color: #bcf2f6;
@@ -131,16 +149,17 @@ body {
   width: 100%;
 }
 
-#header-flexbox {
+#header {
+  border: yellow solid 2px;
   display: flex;
-  position: absolute;
+  position: sticky;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   background-color: #006bff;
-  height: 50px;
+  height: 3.5rem;
   width: 100%;
   top: 0px;
-  gap: 20px;
-  justify-content: right;
+  gap: 1rem;
+  justify-content: start;
   align-items: center;
 }
 
@@ -178,13 +197,14 @@ body {
 
 #footer {
   display: flex;
-  position: absolute;
+  position: static;
   bottom: 0px;
   width: 100%;
   background-color: #006bff;
-  height: 50px;
+  height: 3.5rem;
   justify-content: left;
   align-items: center;
+  margin-top: 3rem;
   box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -215,23 +235,12 @@ form {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.header-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  width: 100px;
-  background-color: #08c2ff;
-  color: #bcf2f6;
-  border-radius: 5px;
-}
-
 #main-flexbox {
   display: flex;
   flex-direction: column;
 }
 
-@media (max-width: 480px) and (-webkit-device-pixel-ratio: 3) {
+@media (max-width: 480px) {
   #main-grid {
     grid-template-columns: 1fr;
   }
@@ -255,7 +264,8 @@ form {
 
   .right-side {
     width: 100%;
-    margin-top: 30px;
+    margin-top: 1rem;
+    margin-top: 1rem;
   }
 
   .left-side-inner {
@@ -266,23 +276,18 @@ form {
   .right-side-inner {
     padding: 10px;
     width: 80%;
-    margin-right: 0px;
     border-radius: 20px;
   }
 
   body {
     overflow-y: auto;
+    overflow-x: hidden;
   }
 
-  #header-flexbox {
+  #header {
     position: sticky;
     gap: 5px;
     justify-content: space-evenly;
-  }
-
-  #footer {
-    position: fixed;
-    bottom: 0px;
   }
 }
 
@@ -329,15 +334,10 @@ form {
     overflow-y: auto;
   }
 
-  #header-flexbox {
+  #header {
     position: sticky;
     gap: 5px;
     justify-content: space-evenly;
-  }
-
-  #footer {
-    position: fixed;
-    bottom: 0px;
   }
 }
 
@@ -384,15 +384,10 @@ form {
     overflow-y: auto;
   }
 
-  #header-flexbox {
+  #header {
     position: sticky;
     gap: 5px;
     justify-content: space-evenly;
-  }
-
-  #footer {
-    position: fixed;
-    bottom: 0px;
   }
 }
 
@@ -414,11 +409,6 @@ form {
 
   body {
     overflow-y: auto;
-  }
-
-  #footer {
-    position: absolute;
-    bottom: 0;
   }
 }
 
