@@ -6,12 +6,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: red solid 2px;
 }
 
 .header-btn-box {
   width: 100%;
-  border: white solid 2px;
   display: flex;
   justify-content: right;
   gap: 1rem;
@@ -150,7 +148,6 @@ body {
 }
 
 #header {
-  border: yellow solid 2px;
   display: flex;
   position: sticky;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
