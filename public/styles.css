@@ -325,6 +325,7 @@ form {
 
   body {
     overflow-y: auto;
+    overflow-x: hidden;
   }
 
   #header {
@@ -375,6 +376,7 @@ form {
 
   body {
     overflow-y: auto;
+    overflow-x: hidden;
   }
 
   #header {
@@ -402,6 +404,7 @@ form {
 
   body {
     overflow-y: auto;
+    overflow-x: hidden;
   }
 }
 
